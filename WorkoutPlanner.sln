@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AB5448E1-C9B0-4190-8CB8-BAA05E859FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutPlanner.API", "src\WorkoutPlanner.API\WorkoutPlanner.API.csproj", "{803E4399-FB53-4DD8-A3DC-ED0E4BC73206}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutPlanner.Domain", "src\WorkoutPlanner.Domain\WorkoutPlanner.Domain.csproj", "{4853E52B-0745-4037-89B9-D05276F7C8AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutPlanner.Application", "src\WorkoutPlanner.Application\WorkoutPlanner.Application.csproj", "{63F2F537-2853-4754-A877-CD6AF61B5746}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkoutPlanner.Infrastructure", "src\WorkoutPlanner.Infrastructure\WorkoutPlanner.Infrastructure.csproj", "{2F47F24A-880A-425F-A5BA-D29A30A3E06B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{803E4399-FB53-4DD8-A3DC-ED0E4BC73206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{803E4399-FB53-4DD8-A3DC-ED0E4BC73206}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{803E4399-FB53-4DD8-A3DC-ED0E4BC73206}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{803E4399-FB53-4DD8-A3DC-ED0E4BC73206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4853E52B-0745-4037-89B9-D05276F7C8AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4853E52B-0745-4037-89B9-D05276F7C8AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4853E52B-0745-4037-89B9-D05276F7C8AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4853E52B-0745-4037-89B9-D05276F7C8AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63F2F537-2853-4754-A877-CD6AF61B5746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63F2F537-2853-4754-A877-CD6AF61B5746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63F2F537-2853-4754-A877-CD6AF61B5746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63F2F537-2853-4754-A877-CD6AF61B5746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F47F24A-880A-425F-A5BA-D29A30A3E06B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F47F24A-880A-425F-A5BA-D29A30A3E06B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F47F24A-880A-425F-A5BA-D29A30A3E06B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F47F24A-880A-425F-A5BA-D29A30A3E06B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{803E4399-FB53-4DD8-A3DC-ED0E4BC73206} = {AB5448E1-C9B0-4190-8CB8-BAA05E859FF8}
+		{4853E52B-0745-4037-89B9-D05276F7C8AA} = {AB5448E1-C9B0-4190-8CB8-BAA05E859FF8}
+		{63F2F537-2853-4754-A877-CD6AF61B5746} = {AB5448E1-C9B0-4190-8CB8-BAA05E859FF8}
+		{2F47F24A-880A-425F-A5BA-D29A30A3E06B} = {AB5448E1-C9B0-4190-8CB8-BAA05E859FF8}
+	EndGlobalSection
+EndGlobal

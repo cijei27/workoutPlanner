@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KvA8cbkmG1c=",
+  "success": true,
+  "projectFilePath": "/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/WorkoutPlanner.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/davidramonchica/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512",
+    "/Users/davidramonchica/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

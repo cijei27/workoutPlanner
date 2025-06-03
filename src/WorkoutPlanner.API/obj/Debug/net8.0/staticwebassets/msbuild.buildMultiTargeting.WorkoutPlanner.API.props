@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/WorkoutPlanner.API.props" />
+</Project>

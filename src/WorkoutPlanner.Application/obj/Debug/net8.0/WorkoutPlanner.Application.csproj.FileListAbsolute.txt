@@ -1,0 +1,15 @@
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/bin/Debug/net8.0/WorkoutPlanner.Application.deps.json
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/bin/Debug/net8.0/WorkoutPlanner.Application.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/bin/Debug/net8.0/WorkoutPlanner.Application.pdb
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/bin/Debug/net8.0/WorkoutPlanner.Domain.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/bin/Debug/net8.0/WorkoutPlanner.Domain.pdb
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.csproj.AssemblyReference.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.AssemblyInfoInputs.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.AssemblyInfo.cs
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.csproj.CoreCompileInputs.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutP.736D3CC2.Up2Date
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/refint/WorkoutPlanner.Application.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/WorkoutPlanner.Application.pdb
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Application/obj/Debug/net8.0/ref/WorkoutPlanner.Application.dll

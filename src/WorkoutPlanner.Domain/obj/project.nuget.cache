@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bvwo6Cr5k/M=",
+  "success": true,
+  "projectFilePath": "/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Domain/WorkoutPlanner.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/davidramonchica/.nuget/packages/erroror/2.0.1/erroror.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WorkoutPlanner.API</name>
+    </assembly>
+    <members>
+        <member name="T:WorkoutPlanner.API.Common.Doc.Swagger.UseCases.Exercise.CreateExerciseCommandExample">
+            <summary>
+            Ejemplo de payload para CreateExerciseCommandExample
+            </summary>
+        </member>
+        <member name="T:WorkoutPlanner.API.Controllers.WorkoutPlannerController">
+            <summary>
+            Operaciones sobre ejercicios de entrenamiento
+            </summary>
+        </member>
+        <member name="M:WorkoutPlanner.API.Controllers.WorkoutPlannerController.CreateExercise(WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand)">
+            <summary>
+            Crea un nuevo ejercicio de entrenamiento
+            </summary>
+            <param name="command">Payload con los datos del ejercicio</param>
+            <returns>El Id del ejercicio creado</returns>
+        </member>
+        <member name="T:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand">
+            <summary>
+            Command para crear un nuevo ejercicio
+            </summary>
+            <param name="Name">Nombre del ejercicio</param>
+            <param name="Description">Descripción detallada de lo que hace el ejercicio</param>
+            <param name="VideoURL">URL de internet o de alguna plataforma dónde esté alojado el video</param>
+            <param name="ExerciseCategory">  Las categorías que se pueden almacenar se clasifican en : FullBody(0), UpperBody(1),LowerBody(2),Core(3),Cardio(4),Glutes(5),Back(6),Chest(7),Arms(8),Legs(9)</param>
+            <param name="TargetMuscles">Músculos implicados al hacer el ejercicio</param>
+            <remarks>
+            Ejemplo JSON:
+                {
+                  "name": "Sentadillas",
+                  "description": "Sentadillas con barra para cuádriceps y glúteos",
+                  "videoUrl": "https://…",
+                  "category": 9,
+                  "targetMuscles": ["Quadriceps","Glutes"]
+                }
+            
+            </remarks>
+        </member>
+        <member name="M:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.#ctor(System.String,System.String,System.String,WorkoutPlanner.Domain.Enums.ExerciseCategory,System.Collections.Generic.List{System.String})">
+            <summary>
+            Command para crear un nuevo ejercicio
+            </summary>
+            <param name="Name">Nombre del ejercicio</param>
+            <param name="Description">Descripción detallada de lo que hace el ejercicio</param>
+            <param name="VideoURL">URL de internet o de alguna plataforma dónde esté alojado el video</param>
+            <param name="ExerciseCategory">  Las categorías que se pueden almacenar se clasifican en : FullBody(0), UpperBody(1),LowerBody(2),Core(3),Cardio(4),Glutes(5),Back(6),Chest(7),Arms(8),Legs(9)</param>
+            <param name="TargetMuscles">Músculos implicados al hacer el ejercicio</param>
+            <remarks>
+            Ejemplo JSON:
+                {
+                  "name": "Sentadillas",
+                  "description": "Sentadillas con barra para cuádriceps y glúteos",
+                  "videoUrl": "https://…",
+                  "category": 9,
+                  "targetMuscles": ["Quadriceps","Glutes"]
+                }
+            
+            </remarks>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.Name">
+            <summary>Nombre del ejercicio</summary>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.Description">
+            <summary>Descripción detallada de lo que hace el ejercicio</summary>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.VideoURL">
+            <summary>URL de internet o de alguna plataforma dónde esté alojado el video</summary>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.ExerciseCategory">
+            <summary>  Las categorías que se pueden almacenar se clasifican en : FullBody(0), UpperBody(1),LowerBody(2),Core(3),Cardio(4),Glutes(5),Back(6),Chest(7),Arms(8),Legs(9)</summary>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.CreateExercise.CreateExerciseCommand.TargetMuscles">
+            <summary>Músculos implicados al hacer el ejercicio</summary>
+        </member>
+        <member name="T:WorkoutPlanner.API.UseCases.Exercise.ReadExercise.ReadExerciseCommand">
+            <summary>
+            Command para leer ejercicios con paginación
+            </summary>
+            <param name="Page">Número de páginas.</param>
+            <param name="Limit">Cantidad máxima de registros por página.</param>
+        </member>
+        <member name="M:WorkoutPlanner.API.UseCases.Exercise.ReadExercise.ReadExerciseCommand.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Command para leer ejercicios con paginación
+            </summary>
+            <param name="Page">Número de páginas.</param>
+            <param name="Limit">Cantidad máxima de registros por página.</param>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.ReadExercise.ReadExerciseCommand.Page">
+            <summary>Número de páginas.</summary>
+        </member>
+        <member name="P:WorkoutPlanner.API.UseCases.Exercise.ReadExercise.ReadExerciseCommand.Limit">
+            <summary>Cantidad máxima de registros por página.</summary>
+        </member>
+    </members>
+</doc>
