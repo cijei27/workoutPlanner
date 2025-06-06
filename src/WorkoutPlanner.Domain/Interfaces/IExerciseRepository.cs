@@ -12,6 +12,6 @@ namespace WorkoutPlanner.Domain.Interfaces
         Task<ExerciseEntity> CreateExerciseAsync(ExerciseEntity exercise);
         Task<bool> ExistsExerciseAsync(Guid id);
         Task DeleteExerciseAsync(Guid id);
-        // Añadir delete and update
+        // Añadir update
     }
 }

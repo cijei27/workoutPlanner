@@ -15,6 +15,11 @@ using WorkoutPlanner.Application.UseCases.Exercise.ReadExercise.Interfaces;
 using WorkoutPlanner.Application.UseCases.Exercise.ReadExercise;
 using WorkoutPlanner.Application.UseCases.Exercise.DeleteExercise.Interfaces;
 using WorkoutPlanner.Application.UseCases.Exercise.DeleteExercise;
+using WorkoutPlanner.Domain.Interfaces.ExternalServices;
+using WorkoutPlanner.Infrastructure.ExternalServices.OpenAI;
+using Microsoft.Extensions.Options;
+using WorkoutPlanner.Infrastructure.ExternalServices.OpenAI.Settings;
+using System.Net.Http.Headers;
 var builder = WebApplication.CreateBuilder(args);
 
 // Esto hace que todos los Guid se serialicen con la representación “standard”
@@ -58,6 +63,14 @@ builder.Services.AddScoped<ICreateExerciseUseCase, CreateExerciseUseCase>();
 builder.Services.AddScoped<IReadExerciseUseCase, ReadExerciseUseCase>();
 builder.Services.AddScoped<IDeleteExerciseUseCase, DeleteExerciseUseCase>();
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddHttpClient<IOpenAIClient, OpenAIService>((prov, client) =>
+{
+    var opts = prov.GetRequiredService<IOptions<OpenAISettings>>().Value;
+    client.BaseAddress = new Uri(opts.BaseURL);
+    client.Timeout = TimeSpan.FromSeconds(opts.TimeoutSeconds);
+    client.DefaultRequestHeaders.Authorization =
+        new AuthenticationHeaderValue("Bearer", opts.ApiKey);
+});
 var app = builder.Build();
 
 

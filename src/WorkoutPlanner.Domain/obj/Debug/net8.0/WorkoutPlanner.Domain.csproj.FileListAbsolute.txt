@@ -10,3 +10,4 @@
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Domain/obj/Debug/net8.0/refint/WorkoutPlanner.Domain.dll
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Domain/obj/Debug/net8.0/WorkoutPlanner.Domain.pdb
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Domain/obj/Debug/net8.0/ref/WorkoutPlanner.Domain.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Domain/obj/Debug/net8.0/WorkoutPlanner.Domain.sourcelink.json

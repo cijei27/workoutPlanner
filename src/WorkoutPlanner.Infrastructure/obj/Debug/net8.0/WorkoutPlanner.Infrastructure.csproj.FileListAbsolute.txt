@@ -13,3 +13,4 @@
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Infrastructure/obj/Debug/net8.0/refint/WorkoutPlanner.Infrastructure.dll
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Infrastructure/obj/Debug/net8.0/WorkoutPlanner.Infrastructure.pdb
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Infrastructure/obj/Debug/net8.0/ref/WorkoutPlanner.Infrastructure.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.Infrastructure/obj/Debug/net8.0/WorkoutPlanner.Infrastructure.sourcelink.json

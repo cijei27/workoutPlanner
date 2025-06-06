@@ -1,0 +1,6 @@
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.csproj.AssemblyReference.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.AssemblyInfoInputs.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.AssemblyInfo.cs
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.csproj.CoreCompileInputs.cache
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/tests/WorkoutPlanner.Tests/obj/Debug/net7.0/WorkoutPlanner.Tests.sourcelink.json
