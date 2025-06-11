@@ -3,3 +3,4 @@
 WorkoutPlanner.API/appsettings*.json
 **/bin/
 **/obj/
+src/WorkoutPlanner.API/appsettings.json
