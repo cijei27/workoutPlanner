@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkoutPlanner.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d77e9b54ade64db51664adada214c2ac337485bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98415af51c86ea1ba616baa6bd4dc7ca0ac51173")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkoutPlanner.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkoutPlanner.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

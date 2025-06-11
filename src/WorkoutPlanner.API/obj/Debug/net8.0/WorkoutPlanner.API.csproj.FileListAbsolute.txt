@@ -69,3 +69,4 @@
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.API/obj/Debug/net8.0/WorkoutPlanner.API.pdb
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.API/obj/Debug/net8.0/WorkoutPlanner.API.genruntimeconfig.cache
 /Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.API/obj/Debug/net8.0/ref/WorkoutPlanner.API.dll
+/Users/davidramonchica/Documents/Proyectos/workoutPlanner/backend/src/WorkoutPlanner.API/obj/Debug/net8.0/WorkoutPlanner.API.sourcelink.json
