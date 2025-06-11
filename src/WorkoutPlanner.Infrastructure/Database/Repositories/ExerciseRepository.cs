@@ -1,6 +1,7 @@
 using MongoDB.Driver;
 using WorkoutPlanner.Domain.Entities.Exercise;
 using WorkoutPlanner.Domain.Interfaces;
+using WorkoutPlanner.Domain.Interfaces.ExternalServices;
 using WorkoutPlanner.Infrastructure.MongoDb;
 
 namespace WorkoutPlanner.Infrastructure.Database.Repositories
@@ -8,14 +9,16 @@ namespace WorkoutPlanner.Infrastructure.Database.Repositories
     public class ExerciseRepository : IExerciseRepository
     {
         private readonly IMongoCollection<ExerciseEntity> _col;
-        public ExerciseRepository(MongoService mongo)
+        private readonly IExerciseOpenAIRepository _openAIRepository;
+        public ExerciseRepository(MongoService mongo, IExerciseOpenAIRepository openAIRepository)
         {
             _col = mongo.Exercises;
+            _openAIRepository = openAIRepository ?? throw new ArgumentNullException(nameof(openAIRepository));
         }
 
-        public async Task<ExerciseEntity> CreateExerciseAsync(ExerciseEntity exercise)
+        public async Task<ExerciseEntity> CreateExerciseAsync(ExerciseEntity exercise, CancellationToken cancellationToken)
         {
-            await _col.InsertOneAsync(exercise);
+            await _col.InsertOneAsync(exercise, cancellationToken: cancellationToken);
 
             return exercise;
         }

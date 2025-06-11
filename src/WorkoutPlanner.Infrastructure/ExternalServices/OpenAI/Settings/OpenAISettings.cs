@@ -25,7 +25,7 @@ namespace WorkoutPlanner.Infrastructure.ExternalServices.OpenAI.Settings
         /// <summary>
         /// Tiempo de espera en segundos antes de abortar la solicitud HTTP
         /// </summary>
-        public int TimeoutSeconds { get; set; }
+        public int TimeoutSeconds { get; set; } = 30;
 
         /// <summary>
         /// El rol del sistema para los prompts

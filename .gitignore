@@ -1,3 +1,5 @@
 /.DS_Store
 /.qodo
 WorkoutPlanner.API/appsettings*.json
+**/bin/
+**/obj/

@@ -9,7 +9,7 @@ namespace WorkoutPlanner.Domain.Interfaces
     {
         Task<ExerciseEntity> ReadExerciseByIdAsync(Guid id);
         Task<List<ExerciseEntity>> ReadAllExercisesync(int skip, int limit);
-        Task<ExerciseEntity> CreateExerciseAsync(ExerciseEntity exercise);
+        Task<ExerciseEntity> CreateExerciseAsync(ExerciseEntity exercise, CancellationToken cancellationToken = default);
         Task<bool> ExistsExerciseAsync(Guid id);
         Task DeleteExerciseAsync(Guid id);
         // Añadir update

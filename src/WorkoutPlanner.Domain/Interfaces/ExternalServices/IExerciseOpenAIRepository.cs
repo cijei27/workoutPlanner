@@ -8,7 +8,7 @@ namespace WorkoutPlanner.Domain.Interfaces.ExternalServices
 {
     public interface IExerciseOpenAIRepository
     {
-        Task<string> FeedExerciseAsync(ExerciseEntity exercise, CancellationToken cancellationToken = default);
+        Task<ExerciseEntity> FeedExerciseAsync(ExerciseEntity exercise, CancellationToken cancellationToken = default);
         Task<string> RecognizeExerciseAsync(string videoURL, CancellationToken cancellationToken = default);
 
     }

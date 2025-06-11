@@ -46,20 +46,21 @@ namespace WorkoutPlanner.Infrastructure.ExternalServices.OpenAI
 
             // 2) Serializar y enviar POST
             var content = JsonContent.Create(requestBody, options: _jsonOptions);
-            using var response = await _http.PostAsync("chat/completions", content, cancellationToken: cancellationToken);
-
+            using var response = await _http.PostAsync("v1/chat/completions", content, cancellationToken: cancellationToken);
             response.EnsureSuccessStatusCode();
 
             // 3) Leer stream y parsear JSON
             using var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
             using var document = await JsonDocument.ParseAsync(stream, cancellationToken: cancellationToken);
 
+            Console.WriteLine("Que me devuelve chatgpt " + document);
             // 4) Extraer choices[0].message.content
             if (document.RootElement.TryGetProperty("choices", out var choices) && choices.ValueKind == JsonValueKind.Array && choices.GetArrayLength() > 0)
             {
                 var firstChoice = choices.EnumerateArray().First();
                 if (firstChoice.TryGetProperty("message", out var msgElem) && msgElem.TryGetProperty("content", out var contentElem))
                 {
+                    Console.WriteLine("Que me devuelve chatgpt" + contentElem.GetString()!.Trim());
                     return contentElem.GetString()!.Trim();
                 }
             }

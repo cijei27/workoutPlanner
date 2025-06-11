@@ -20,6 +20,7 @@ using WorkoutPlanner.Infrastructure.ExternalServices.OpenAI;
 using Microsoft.Extensions.Options;
 using WorkoutPlanner.Infrastructure.ExternalServices.OpenAI.Settings;
 using System.Net.Http.Headers;
+using WorkoutPlanner.Infrastructure.ExternalServices.OpenAI.Repositories;
 var builder = WebApplication.CreateBuilder(args);
 
 // Esto hace que todos los Guid se serialicen con la representación “standard”
@@ -52,22 +53,34 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 builder.Services.AddSwaggerExamplesFromAssemblyOf<Program>();
-builder.Services.Configure<MongoDbSettings>(
-    builder.Configuration.GetSection("MongoDbSettings"));
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDbSettings"));
+builder.Services.Configure<OpenAISettings>(builder.Configuration.GetSection("OpenAI"));
 
 builder.Services.AddSingleton<MongoService>();
 builder.Services.AddScoped<IExerciseRepository, ExerciseRepository>();
+builder.Services.AddScoped<IExerciseOpenAIRepository, ExerciseOpenAIRepository>();
 builder.Services.AddScoped<IWorkoutRepository, WorkoutRepository>();
-// Registra la implementación de tu UseCase
 builder.Services.AddScoped<ICreateExerciseUseCase, CreateExerciseUseCase>();
 builder.Services.AddScoped<IReadExerciseUseCase, ReadExerciseUseCase>();
 builder.Services.AddScoped<IDeleteExerciseUseCase, DeleteExerciseUseCase>();
 builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddUserSecrets<Program>();
+}
 builder.Services.AddHttpClient<IOpenAIClient, OpenAIService>((prov, client) =>
 {
     var opts = prov.GetRequiredService<IOptions<OpenAISettings>>().Value;
+    if (string.IsNullOrWhiteSpace(opts.BaseURL))
+    {
+        throw new InvalidOperationException("OpenAISettings.BaseURL no está configurado en appsettings.json.");
+    }
     client.BaseAddress = new Uri(opts.BaseURL);
-    client.Timeout = TimeSpan.FromSeconds(opts.TimeoutSeconds);
+    client.Timeout = TimeSpan.FromSeconds(
+                            opts.TimeoutSeconds > 0
+                            ? opts.TimeoutSeconds
+                            : 30
+                        );
     client.DefaultRequestHeaders.Authorization =
         new AuthenticationHeaderValue("Bearer", opts.ApiKey);
 });
@@ -79,9 +92,7 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-     c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1")
- );
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1"));
 }
 
 app.UseHttpsRedirection();
