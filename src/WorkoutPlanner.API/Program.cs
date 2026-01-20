@@ -89,9 +89,10 @@ var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 var app = builder.Build();
+var enableSwagger = builder.Configuration.GetValue<bool>("Swagger:Enabled");
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (enableSwagger || app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "v1"));
