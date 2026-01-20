@@ -84,9 +84,11 @@ builder.Services.AddHttpClient<IOpenAIClient, OpenAIService>((prov, client) =>
     client.DefaultRequestHeaders.Authorization =
         new AuthenticationHeaderValue("Bearer", opts.ApiKey);
 });
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
 var app = builder.Build();
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
